@@ -1,4 +1,4 @@
-# freeCodeCampDSA-Projects (JavaScript Algorithms and Data Structures Projects)
+# freecodecampDSA-projects (JavaScript Algorithms and Data Structures Projects)
 
 ## Palindrome Checker problem
 
@@ -8,10 +8,12 @@
 
 First i am eliminteing all the non-alphanumeric character from it after getting this string then i have check this string is palindrome or not
 
-    1. To eliminate all the non-alphanumeric character i am using here two built in method. first one is str[i].charCodeAt(0) and the
-       other one is String.fromCharCode(value)
+    1. To eliminate all the non-alphanumeric character i am using here two built in method.
+       first one is str[i].charCodeAt(0) and the other one is String.fromCharCode(value)
 
-    2. then i check updatedString is palindrome or not . if palindrome then return true otherwise return false
+
+    2. then i check updatedString is palindrome or not . if palindrome then return true
+       otherwise return false.
 
 ## ceasars cipher problem
 
