@@ -36,7 +36,8 @@ First i am eliminteing all the non-alphanumeric character from it after getting 
 
 to solve this problem i follow this step:
 
-    1.Everytime i check given number is greater then zero or not ,if not then break   out the whileloop, other wise go to inside the loop
-    2.then i check the number is greater than or equal 1000 if condition satisfied add 'M' into our ans variable and subtract 1000 from num
-    3.repeat no. 2 step for rest of all number are given in the problem statement
+    1.Everytime i check given number is greater then zero or not ,if not then break <br>
+    out the whileloop, other wise go to inside the loop.
+    2.then i check the number is greater than or equal 1000 if condition satisfied <br>add 'M' into our ans variable and subtract 1000 from num
+    3.repeat no. 2 step for rest of all number are given in the problem statement<br>
       900,500,400,100,90,50,40,10,9,5,4,1.
