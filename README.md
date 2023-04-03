@@ -40,4 +40,6 @@ to solve this problem i follow this step:
     other wise go to inside the loop.
     2.then i check the number is greater than or equal 1000 if condition satisfied add 'M' into our
     ans variable and subtract 1000 from num
-    3.repeat no. 2 step for rest of all number are given in the problem statement   900,500,400,100,90,50,40,10,9,5,4,1.
+    3.repeat no. 2 step for rest of all number are given in the problem statement
+
+    900,500,400,100,90,50,40,10,9,5,4,1.
