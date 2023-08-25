@@ -58,3 +58,79 @@ To solve this problem first i have to understand which combination are valid Num
       1 555 555 5555  //number may contain 1(if contain it must be start with 1) or may not as a country code.
 
 The easiest way to validate a number is using regex that's why i am using regex here,
+
+## Cash Register [problem-link](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/cash-register)
+
+### In this problem I have given by the arguments ,the first one is price(perchase price ) , second one is cash and the last one is cid (cash in drawer) which is a 2d array with available currency and i have to return -
+
+    1. if total cid is equal to due (cash - price) then,
+        {status:'CLOSE',change:cid}
+    2. if total cid is less than to due than i,
+        {status:'INSUFFICIENT',change:[]}
+    3. if i can give the due amount from cid then ,
+        {status:'OPEN',change:changeCoin} here, changeCoin is a 2D Array
+
+### Strategy :
+
+      1. calculate the total amount in my cid
+      2. calculate the difference between cash and price
+      3. if total === due then our cash is closed
+      4. if total is less than due that means our cash has inSufficient balance
+      5. now i have to calculate giveMoney , to do that
+         loop through the coin array if coin[i] is less than total
+         that means this should be given
+
+<!-- #### 1. At first I declear a cashBox which is a 2D Array :
+
+```
+const cashBox = [
+  ["PENNY", .01],
+  ["NICKEL", .05],
+  ["DIME", .1],
+  ["QUARTER", .25],
+  ["ONE", 1],
+  ["FIVE", 5],
+  ["TEN", 10],
+  ["TWENTY", 20],
+  ["ONE HUNDRED", 100]
+]
+```
+
+### 2. Then i calculate the difference between cash and price
+
+```
+const difference = Number.parseFloat((cash - price)toFixed(2))
+
+```
+
+### 3. I calculate the how much money present in my cid
+
+```
+let total = 0;
+for(let i =0;i<cid.length; i++){
+  total+= (cid[i][1])
+}
+total = Number.parseFloat(total.toFixed(2))
+
+```
+
+### Now I am good to go to check our problem condition-
+
+### First I am checking between total and due if They are same then :
+
+```
+if(total=== difference){
+  return({status:'CLOSED',change:cid})
+}
+```
+
+### If they are not same I mean total is less than due
+
+```
+if(total<difference){
+    return{status:'INSUFFICIENT_FUNDS',change:[]}
+  }
+```
+
+### If above two condition are not satisfied now I have to calculate the changedCoin:
+ -->
